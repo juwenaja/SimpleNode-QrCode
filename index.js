@@ -13,7 +13,7 @@
 const lib = require("./lib/lib");
 
 const index = async() => {
-    let txt2 = process.argv[2] || lib.log || false;
+    let txt2 = process.argv[2] || lib.txt || false;
     await lib.startLog(txt2)
     await lib.process(txt2)
     await lib.succsessLog(txt2)
